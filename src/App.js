@@ -1,6 +1,7 @@
 import React from "react";
 import PersonalInfoForm from "./components/PersonalInfoForm";
 import EducationForm from "./components/EducationForm";
+import ExperienceForm from "./components/ExperienceForm";
 
 import PersonalInfoDisplay from "./components/PersonalInfoDisplay";
 import EducationDisplay from "./components/EducationDisplay";
@@ -23,11 +24,19 @@ class App extends React.Component {
           qualification: 'Bachelor of Science in Computer Science',
           startDate: '2020',
           endDate: '2024',
+        },
+        experience: {
+          company: 'Some Company',
+          position: 'Junior Developer',
+          startDate: '2020',
+          endDate: '2022',
+          description: 'Mi proin sed libero enim sed faucibus. Urna nec tincidunt praesent semper feugiat nibh. Volutpat blandit aliquam etiam erat velit. Sed turpis tincidunt id aliquet risus feugiat.'
         }
     };
 
     this.onSubmitPersonalInfo = this.onSubmitPersonalInfo.bind(this);
     this.onSubmitEducation = this.onSubmitEducation.bind(this);
+    this.onSubmitExperience = this.onSubmitExperience.bind(this);
   }
 
   onSubmitPersonalInfo(e, data) {
@@ -42,7 +51,13 @@ class App extends React.Component {
     this.setState({
       education: data
     })
-    console.log(this.state.education);
+  }
+
+  onSubmitExperience(e, data) {
+    e.preventDefault();
+    this.setState({
+      experience: data
+    })
   }
 
   render() {
@@ -51,6 +66,7 @@ class App extends React.Component {
         <div className="forms">
           <PersonalInfoForm onSubmitPersonalInfo={this.onSubmitPersonalInfo}/>
           <EducationForm onSubmitEducation={this.onSubmitEducation}/>
+          <ExperienceForm onSubmitExperience={this.onSubmitExperience}/>
         </div>
       
         <div className="resume">

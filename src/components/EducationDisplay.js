@@ -9,7 +9,7 @@ class EducationDisplay extends React.Component {
                 <p className="education-header">EDUCATION</p>
                 <div className="divider"></div>
                 <div className="university-attendance">
-                    <p class="university">{this.props.details.school}</p>
+                    <p>{this.props.details.school}</p>
                     <p>{this.props.details.startDate} - {this.props.details.endDate}</p>
                 </div>
                 <p>{this.props.details.qualification}</p>             
