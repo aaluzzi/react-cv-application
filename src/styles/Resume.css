@@ -1,7 +1,7 @@
-.education {
+.section {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+
 }
 
 .divider {
@@ -9,11 +9,20 @@
     border-bottom: 2px solid black;
 }
 
-.education-header,.university-attendance {
+.header,.sub-header {
     font-weight: bold;
 }
 
-.university-attendance {
+.sub-header {
     display: flex;
     justify-content: space-between;
+}
+
+.company {
+    font-weight: normal;
+    font-style: italic;
+}
+
+p {
+    line-height: 32px;
 }

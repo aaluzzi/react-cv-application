@@ -14,13 +14,13 @@ class ExperienceForm extends React.Component {
 
     onChangeCompany(e) {
         this.setState({
-            school: e.target.value
+            company: e.target.value
         });
     }
 
     onChangePosition(e) {
         this.setState({
-            qualification: e.target.value
+            position: e.target.value
         });
     }
 
@@ -51,7 +51,7 @@ class ExperienceForm extends React.Component {
                     <input type="text" placeholder="Position" onChange={this.onChangePosition} required />
                     <input type="text" placeholder="Start Date" onChange={this.onChangeStartDate} required />
                     <input type="text" placeholder="End Date" onChange={this.onChangeEndDate} required />
-                    <input type="text" placeholder="Description" onChange={this.onChangeDescription} />
+                    <input type="text" placeholder="Description" onChange={this.onChangeDescription} required />
                     <div className="button-row">
                         <button type="submit">Submit</button>
                     </div>

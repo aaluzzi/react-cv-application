@@ -1,14 +1,14 @@
 import React from "react";
-import '../styles/Education.css';
+import '../styles/Resume.css';
 
 class EducationDisplay extends React.Component {
 
     render() {
         return (
-            <div className="education">
-                <p className="education-header">EDUCATION</p>
+            <div className="section">
+                <p className="header">EDUCATION</p>
                 <div className="divider"></div>
-                <div className="university-attendance">
+                <div className="sub-header">
                     <p>{this.props.details.school}</p>
                     <p>{this.props.details.startDate} - {this.props.details.endDate}</p>
                 </div>

@@ -5,6 +5,7 @@ import ExperienceForm from "./components/ExperienceForm";
 
 import PersonalInfoDisplay from "./components/PersonalInfoDisplay";
 import EducationDisplay from "./components/EducationDisplay";
+import ExperienceDisplay from "./components/ExperienceDisplay";
 
 import './styles/App.css'
 
@@ -64,14 +65,15 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="forms">
-          <PersonalInfoForm onSubmitPersonalInfo={this.onSubmitPersonalInfo}/>
-          <EducationForm onSubmitEducation={this.onSubmitEducation}/>
-          <ExperienceForm onSubmitExperience={this.onSubmitExperience}/>
+          <PersonalInfoForm onSubmitPersonalInfo={this.onSubmitPersonalInfo} />
+          <EducationForm onSubmitEducation={this.onSubmitEducation} />
+          <ExperienceForm onSubmitExperience={this.onSubmitExperience} />
         </div>
       
         <div className="resume">
           <PersonalInfoDisplay details={this.state.personalDetails} />
           <EducationDisplay details={this.state.education} />
+          <ExperienceDisplay details={this.state.experience} />
         </div>
       </div>
     );
