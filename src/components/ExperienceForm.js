@@ -38,7 +38,7 @@ class ExperienceForm extends React.Component {
 
     onChangeDescription(e) {
         this.setState({
-            experience: e.target.value
+            description: e.target.value
         });
     }
 
