@@ -23,8 +23,8 @@ class App extends React.Component {
         education: {
           school: 'Princeton University',
           qualification: 'Bachelor of Science in Computer Science',
-          startDate: '2020',
-          endDate: '2024',
+          startDate: '2016',
+          endDate: '2020',
         },
         experience: {
           company: 'Some Company',
