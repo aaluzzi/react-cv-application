@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../styles/PersonalInfo.css'
+import '../styles/Resume.css'
 
 class PersonalInfoDisplay extends React.Component {
 
